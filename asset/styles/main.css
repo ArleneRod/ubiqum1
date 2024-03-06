@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -47,17 +48,18 @@ table {
 	border-spacing: 0;
     text-align: center;
 }
-#parte1
-{
-	padding-left: 2%;
-	padding-right: 2%;
+.main-nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
 }
-.parte2 {
+
+.header-container{
     background-image: url("../media/image1.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     padding: 110px 0px;
-    text-align: center;
+    text-align: right;
+	padding-bottom: 15px;
 }
 .nav {
     display: -ms-flexbox;
@@ -74,10 +76,19 @@ table {
 	background-image: ("/media/image2.jpg");
 	background-size: cover;
 	background-blend-mode: multiply;
-	padding-bottom:30px;
+	padding-bottom:10px;
+	width: 100%; 
+    height: auto;
+	
 }
 .nav li{
 	display: inline;
+	float: right;
+}
+
+.title {
+    text-align: left;
+    font-size: 36px; 
 }
 
 *{
@@ -86,8 +97,69 @@ table {
 	color:rgb(44, 45, 47);
 }
 nav a {
-	display: inline-block;
-	padding: .5mm;
+	
+	padding: 1mm;
 	color:bisque;
-	text-decoration: none;
+	
+}
+nav a hover {
+background-color: azure;
+}
+.main-nav
+{
+	text-align: right;
+	font-size: 1.1em;
+	font-weight: lighter;
+	border-bottom: 1px solid gray;
+	
+}
+.main-nav li{
+	padding: 0 5%;
+	display: inline; 
+    margin-left: 10px; 
+}
+.band-name {
+	text-align: center;
+	margin-bottom: 0%;
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+}
+.content-section {
+	margin: 1em;
+}
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+.section-header{
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	text-align:left;
+	font-size: 1.0em;
+	padding-top: 0.0%;
+	padding-bottom: 0.0%;
+}
+.centrar{
+	margin: auto;
+	width: 50%;
+	padding: 10px;	
+}
+.image-container
+
+{
+	float:left;
+	padding-right: 80px;
+
+}
+
+.content-container
+{
+	float:left;
+}
+.main-nav a {
+font-size: 18px; 
+    text-decoration: none; 
+    color: black;
 }
