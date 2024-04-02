@@ -1,145 +1,162 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-    text-align: center;
-}
-.main-nav ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
+.image-container {
+	width: 20px;
+	height: 10%;
+	border: 1px solid #000;
 }
 
-.header-container{
-    background-image: url("../media/image1.jpg");
-    background-size: cover;
-    padding: 110px 0px;
-    text-align: right;
-	padding-bottom: 15px;
-}
-.nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-	margin:0;
-    list-style: none;
-}
-.main-header{
-	background-color: grey;
-	background-image: ("/media/image2.jpg");
-	background-size: cover;
-	background-blend-mode: multiply;
-	padding: bottom 100px;
-	width: 300%; 
-   
-	
-}
-.nav li{
-	display: inline;
-	float: right;
-}
-
-.title {
-    text-align: left;
-    font-size: 36px; 
-}
-
-*{
-	box-sizing: border-box;
-	font-family: Raleway;
-	color:rgb(44, 45, 47);
-}
-nav a {
-	
-	padding: 1mm;
-	color:bisque;
-	
-}
-nav a hover {
-background-color: azure;
-}
-.main-nav
+.img-mediana
 {
-	text-align: right;
-	font-size: 1.1em;
-	font-weight: lighter;
-	border-bottom: 1px solid gray;
-	
+	width: 500px;
+	height: 500px;
 }
-.main-nav nav{
-	padding: 0 5%;
-	display: inline; 
-    margin-left: 100px; 
+
+.header-container {
+	background-image: url(/asset/media/image1.jpg);
+    height: 350px;
+	background-size: 100% 100%;
+	display:block;
 }
-.band-name {
+body{
+	background-color: dimgrey;
+}
+.navbar{
+	background-color: brown;
+	height: 60px;
+	padding-top: 0%;
+}
+.navbar h2{
+	color: aliceblue;
 	text-align: center;
-	margin-bottom: 100%;
-	font-size: 2em;
-	font-family: Arial, Helvetica, sans-serif;
-	color:white;
+	padding-top: 10px;	
 }
-.content-section {
-	margin: 1em;
-}
-.container{
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 0 1.5em;
-}
-.section-header{
-	font-family: Arial, Helvetica, sans-serif;
-	color:black;
-	text-align:left;
-	font-size: 1.0em;
-	padding-top: 0.0%;
-	padding-bottom: 0.0%;
-}
-.centrar{
-	margin: auto;
-	width: 50%;
-	padding: 10px;	
-}
-.image-container
 
-{
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	text-align: left;
+}
+
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+	align-items: center;
+  }
+.child{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 	float:left;
-	padding-right: 80px;
-
+	padding-top: 20px;
 }
 
-.content-container
-{
-	float:left;
+.content p{
+	text-align: justify;
+	padding-right: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+    float: left;
 }
-.main-nav a {
-font-size: 18px; 
-    text-decoration: none; 
-    color: black;
+.nav-header {
+	text-align: right; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+  }
+
+  .title{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	flex: 1;
+  }
+  .square:hover {
+	background-color: lightblue; /* Cambiar color de fondo cuando se pasa el ratón por encima para hacerlo más parecido a un botón */
+	cursor: pointer; /* Cambiar cursor al pasar por encima para indicar que es interactivo */
+  }
+  .title {
+	text-align: justify;
+	margin-left: 20px;
+	padding-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+    float: left;
 }
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+  .buttons {
+	display: flex;
+  }
+  
+  .square {
+	padding: 5px 10px;
+	background-color: #ddd;
+	margin-left: 10px; 
+  }
+  
+  .square a {
+	text-decoration: none;
+	color: black;
+  }
+  .logo {
+	margin-right: 20px; 
+  }
+  .text {
+	flex: 1; 
+	margin-left: 20px; 
+	display: flex;
+   align-items: center;
+  }
+  table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid black; /* Añade un borde de 3px de grosor de color negro */
+  }
+  th, td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+
+  th {
+	background-color: #f2f2f2;
+  }
+  #map-container {
+	height: 400px; /* Altura del contenedor */
+	width: 100%; /* Ancho del contenedor */
+	margin-bottom: 20px; /* Margen inferior para separar del resto de contenido */
+  }
+  .signup-button {
+
+	margin-left: 20px;
+	float: right;
+  }
+  
+  .signup-button a {
+	padding: 10px 10px;
+	background-color: #4CAF50; /* color de fondo */
+	color: white; /* color del texto */
+	text-decoration: none;
+	border-radius: 5px;
+  }
+  
+  .signup-button a:hover {
+	background-color: #45a049; /* color de fondo al pasar el cursor */
+  }
+
+  .form-data{
+	float:center;
+	position: relative;
+	max-width: 700px;
+	width: 100%;
+	background: #f2f2f2;
+	padding: 25px;
+	margin-top:50px;
+	margin-left: 20px; 
+  }
+

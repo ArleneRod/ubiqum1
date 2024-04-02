@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../asset/styles/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-header">
+      <h1>NorCal Time Trial Series</h1>
+      <div class="buttons">
+        <div class="square"><a href="home.html">Home</a></div>
+        <div class="square"><a href="about.html">About</a></div>
+        <div class="square"><a href="contact.html">Contact</a></div>
+        <div class="square"><a href="information.html">Information</a></div>
+        <div class="square"><a href="rules.html">Rules</a></div>
+      </div>
+    </div>
+    <div class="header-container">
+    </div>
+    <nav class="navbar">
+      <h2>Registration Form</h2>
+    </nav>
+
+    <div class="logo">
+      <img src="../asset/media/logo.jpg" height="150" width="150" class="child">
+    </div>
+    <div class="content">
+        <section class="form-data">
+           
+            <form action="/template/show_data.html" method="get" class="action">
+                <div class="input-box">
+                    <label>First Name:</label>
+                    <input type="text" placeholder="Enter full name">
+                </div>
+                <div class="input-box">
+                    <label>Last Name:</label>
+                    <input type="text" placeholder="Enter last name">
+                </div>
+                <div class="input-box">
+                    <label>Street Address:</label>
+                    <input type="text" placeholder="Enter street address">
+                </div>
+                <div class="input-box">
+                    <label>City:</label>
+                    <input type="text" placeholder="Enter city">
+                </div>
+                <div class="input-box">
+                    <label>Zip Code</label>
+                    <input type="number" placeholder="Enter zip code">
+                </div>
+                <div class="input-box">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                </div>
+                <div class="input-box">
+                    <label>Contact Phone</label>
+                    <input type="number" placeholder="Enter Phone">
+                </div>
+                <div class="input-box">
+                    <label>Contact Email</label>
+                    <input type="text" placeholder="Enter email">
+                </div>
+                <div class="input-box">
+                    <label>Previous Competitive Experience:</label>
+                    <select name="previous_experience">
+                      <option value="None">None</option>
+                      <option value="HPDE/Track Days">HPDE/Track Days</option>
+                      <option value="Autocross">Autocross</option>
+                      <option value="One Year">One Year</option>
+                      <option value="Two Years">Two Years</option>
+                      <option value="Over two years">Over two years</option>
+                    </select>
+                    <div class="input-box">
+                        <label>Racing License</label>
+                        <select name="racing-license">
+                          <option value="None">None</option>
+                          <option value="SCCA">SCCA</option>
+                          <option value="NASA">NASA</option>
+                          <option value="FIA">FIA</option>
+                        </select>
+                      </div>
+                      <p>I agree that I will abide by all the rules of the NorCal Time Trial Series (NCTTS).<br> I recognize that Motorsports are inherently dangerous.<br> I hereby release, discharge, and/or otherwise indemnify NCTTS, their employees and associated personnel and volunteers, including the facilities used for events, against any claim by or on behalf of the registrant as a result of my participation in the series.<br>
+                        By signing below, I hereby agree and authorize the above. </p>
+                        <div class="input-box">
+                            <label>Registras Signature:</label>
+                            <input type="text" placeholder="Signature">
+                        </div>
+                        <div class="input-box">
+                            <label>Date:</label>
+                            <input type="date">
+                        </div>
+                        <button type="submit">Enviar</button> 
+            </form>
+                    </div>
+
+        </section>
+    </div>
+  </div>
+</body>
+
+</html>

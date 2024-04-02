@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <title>Styles Conference</title>
+  <link rel="stylesheet" href="../asset/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="nav-header">
+      <h1>NorCal Time Trial Series</h1>
+      <div class="buttons">
+        <div class="square"><a href="home.html">Home</a></div>
+        <div class="square"><a href="about.html">About</a></div>
+        <div class="square"><a href="contact.html">Contact</a></div>
+        <div class="square"><a href="information.html">Information</a></div>
+        <div class="square"><a href="rules.html">Rules</a></div>
+      </div>
+    </div>
+    <div class="header-container">
+    </div>
+    <nav class="navbar">
+      <h2>General Information</h2>
+    </nav>
+    <div class="content">
+      <div class="logo">
+        <img src="../asset/media/logo.jpg" height="150" width="150" class="child">
+      </div>
+      <div class="text">
+        
+        <ul>
+            <li><strong>Event Details</strong>
+          <li>All events take place on Saturday.</li>
+          <li><strong>Location:</strong>
+            <ul>
+              <li>Sonoma Raceway (formerly called Sears Point)29355 Arnold Dr, Sonoma, CA</li>
+              <div id="map-container"></div>
+            <script>
+  
+                function initMap() {
+      
+                    var sonomaRaceway = {lat: 38.1593, lng: -122.4549};
+                     var map = new google.maps.Map(
+                    document.getElementById('map-container'), {zoom: 15, center: sonomaRaceway});
+                    var marker = new google.maps.Marker({position: sonomaRaceway, map: map});
+            
+                }
+            
+            </script>
+            <script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap">
+             </script>
+              <li>Thunderhill Raceway Park5250 CA-162, Willows, CA</li>
+              <li>WeatherTech Raceway Laguna Seca1021 Monterey Salinas Hwy, Salinas, CA</li>
+            </ul>
+          </li>
+          <li><strong>Spring Schedule:</strong>
+            <ul>
+              <li>March 12 – Thunderhill</li>
+              <li>April 9 – Sonoma</li>
+              <li>May 14 – Laguna Seca</li>
+              <li>May 28 – Laguna Seca</li>
+              <li>June 11 – awards banquet (location TBD)</li>
+            </ul>
+          </li>
+          <li><strong>Times:</strong>
+            <ul>
+              <li>Gates open at 7:00 AM</li>
+              <li>First car out at 9:00 AM</li>
+              <li>Gates close at 5:00 PM</li>
+            </ul>
+          </li>
+          <li><strong>Additional Information:</strong>
+            <ul>
+              <li>If deemed necessary by NCTTS, events may be shortened or cancelled due to extreme weather conditions.</li>
+              <li>Please direct all questions to: Michael Randall, Event Coordinator</li>
+              <li>Phone: (415) 690-8132</li>
+              <li>Email: <a href="mailto:michael.randall@nctts.org?subject=Reaching%20Out&body=How%20are%20you">michael.randall@nctts.org</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
