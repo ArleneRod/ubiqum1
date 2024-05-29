@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Display</title>
+<style>
+  .number {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+  .even {
+    background-color: green;
+  }
+  .odd {
+    background-color: yellow;
+  }
+  .prime {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+<div id="container"></div>
+<script>
+function isPrime(num) {
+  if (num <= 1) return false;
+  if (num % 2 === 0 && num !== 2) return false;
+  for (let i = 3; i <= Math.sqrt(num); i += 2) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+window.onload = function() {
+  const container = document.getElementById('container');
+  for (let i = 1; i <= 100; i++) {
+    const div = document.createElement('div');
+    div.className = 'number';
+    div.textContent = i;
+    if (isPrime(i)) {
+      div.classList.add('prime');
+    } else if (i % 2 === 0) {
+      div.classList.add('even');
+    } else {
+      div.classList.add('odd');
+    }
+    container.appendChild(div);
+  }
+};
+</script>
+</body>
+</html>
